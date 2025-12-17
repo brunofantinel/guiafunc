@@ -1,0 +1,123 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 CLIP TREINAMENTO - GUIA DE INÍCIO RÁPIDO                  ║
+║                    Para Windows com PowerShell                             ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📋 PRÉ-REQUISITOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Node.js 18+ instalado (https://nodejs.org/)
+✓ PowerShell (já vem com Windows)
+✓ Navegador moderno (Chrome, Firefox, Edge, etc.)
+
+Verifique a instalação do Node.js:
+  node --version
+  npm --version
+
+
+🚀 PASSOS PARA COMEÇAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  EXTRAIR O ARQUIVO ZIP:
+   - Clique com botão direito em "CLIP_TREINAMENTO_COMPLETO.zip"
+   - Selecione "Extrair Tudo..."
+   - Escolha a pasta de destino
+   - Clique em "Extrair"
+
+   OU use PowerShell:
+   Expand-Archive -Path CLIP_TREINAMENTO_COMPLETO.zip -DestinationPath C:\Users\SeuUsuario\Documents
+
+
+2️⃣  ABRIR POWERSHELL NA PASTA DO PROJETO:
+   - Navegue até a pasta extraída (clip-treinamento)
+   - Clique na barra de endereço e digite: powershell
+   - Pressione Enter
+
+   OU abra PowerShell e digite:
+   cd C:\Users\SeuUsuario\Documents\clip-treinamento
+
+
+3️⃣  INSTALAR DEPENDÊNCIAS:
+   npm install
+
+   ⏳ Isso pode levar 2-5 minutos na primeira vez
+
+
+4️⃣  INICIAR O SERVIDOR:
+   npm run dev
+
+   Você verá:
+   ➜  Local:   http://localhost:5173/
+
+
+5️⃣  ACESSAR O SITE:
+   - Abra seu navegador
+   - Digite: http://localhost:5173
+   - O site carregará automaticamente!
+
+
+📚 SEÇÕES DO SITE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Introdução
+2. A Importância do Atendimento
+3. Como Abordar o Cliente
+4. Técnicas de Venda na Prática
+5. Exposição e Organização
+6. Merchandising Visual
+7. Comportamento Esperado
+8. Conclusão
++ Quiz Interativo (6 perguntas)
+
+
+🧪 TESTAR O QUIZ:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Scroll até o final do guia
+- Clique em "Começar Quiz"
+- Responda as 6 perguntas
+- Veja seu resultado
+- Clique em "Voltar para o Guia" ou "Reiniciar Quiz"
+
+
+🛠️  COMANDOS ÚTEIS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+npm run dev       # Inicia servidor de desenvolvimento
+npm run build     # Compila para produção
+npm run preview   # Visualiza build de produção
+npm run check     # Verifica erros de tipo
+npm run format    # Formata o código
+
+
+🐛 SOLUÇÃO DE PROBLEMAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ Erro: "npm: O termo 'npm' não é reconhecido"
+✅ Solução: Reinstale Node.js de https://nodejs.org/ e reinicie o PowerShell
+
+❌ Erro: "Port 5173 is already in use"
+✅ Solução: Use outra porta:
+   npm run dev -- --port 3000
+
+❌ Erro: "Cannot find module"
+✅ Solução: Reinstale dependências:
+   npm cache clean --force
+   npm install
+
+❌ Site não carrega no navegador
+✅ Solução:
+   - Verifique se o servidor está rodando
+   - Tente atualizar a página (Ctrl+R)
+   - Limpe o cache (Ctrl+Shift+Delete)
+   - Tente outro navegador
+
+
+📖 DOCUMENTAÇÃO COMPLETA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Abra o arquivo README.md na pasta do projeto para instruções detalhadas
+
+
+🎉 PRONTO!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Se tudo correu bem, o site está rodando em:
+👉 http://localhost:5173
+
+Aproveite o guia de treinamento! 🚀
+

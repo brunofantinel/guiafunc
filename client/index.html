@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Guia de Atendimento e Vendas - CLIP Porto Alegre</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        if (startQuizBtn) {
+          startQuizBtn.addEventListener('click', function (event) {
+            // Navega para a rota do quiz
+            window.location.href = this.getAttribute('href');
+            
+            // Rola para o topo após carregar a rota
+            setTimeout(function () {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+          });
+        }
+      });
+    </script>
+  </body>
+
+</html>
