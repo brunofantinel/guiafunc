@@ -1,12 +1,17 @@
+import path from "path"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  root: 'client',          // AVISA: "O site está aqui dentro"
+  root: 'client',
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./client/src"),
+    },
+  },
   build: {
-    outDir: '../dist',     // AVISA: "Guarde o site pronto na pasta principal"
+    outDir: '../dist',
     emptyOutDir: true,
   }
 })
